@@ -1,0 +1,51 @@
+C:\windows\system32>kubectl logs pod/devopsmlappk8s-79cf76585c-t798c
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+/usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator GradientBoostingRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+/usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+/usr/local/lib/python3.7/site-packages/sklearn/base.py:251: UserWarning: Trying to unpickle estimator GradientBoostingRegressor from version 0.20.3 when using version 0.20.2. This might lead to breaking code or invalid results. Use at your own risk.
+  UserWarning)
+ * Debugger is active!
+ * Debugger PIN: 741-350-132
+[2020-01-22 08:43:35,935] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-01-22 08:43:35,952] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-22 08:43:35,959] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-22 08:43:35,962] INFO in app: Output prediction:
+[20.35373177134412]
+127.0.0.1 - - [22/Jan/2020 08:43:35] "POST /predict HTTP/1.1" 200 -
+[2020-01-22 08:53:09,593] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-01-22 08:53:09,607] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-22 08:53:09,616] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-22 08:53:09,619] INFO in app: Output prediction:
+[20.35373177134412]
+127.0.0.1 - - [22/Jan/2020 08:53:09] "POST /predict HTTP/1.1" 200 -
+[2020-01-22 17:01:15,432] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-01-22 17:01:15,448] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-22 17:01:15,458] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-01-22 17:01:15,460] INFO in app: Output prediction:
+[20.35373177134412]
+127.0.0.1 - - [22/Jan/2020 17:01:15] "POST /predict HTTP/1.1" 200 -
