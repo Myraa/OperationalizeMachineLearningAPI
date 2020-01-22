@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/Myraa/OperationalizeMachineLearningAPI.svg?style=svg)](https://circleci.com/gh/Myraa/OperationalizeMachineLearningAPI)
 
 ## Project Overview
 
