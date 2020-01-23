@@ -6,11 +6,12 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-export dockerpath=bodduprasad/devopsmlapp:latest
+export dockerpath=bodduprasad/devopsmlapp
 
 # Step 2:  
 # Authenticate & tag
-cat ~/dockerpassword.txt | docker login --username bodduprasad --password-stdin
+docker login --username bodduprasad
+docker tag $dockerpath $dockerpath:latest
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
