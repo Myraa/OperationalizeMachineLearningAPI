@@ -34,25 +34,25 @@ This project goal is to operationalize this working, machine learning microservi
 * run_kubernetes.sh : file to run the app in kubernetes
 * upload_docker.sh : file to upload the image to docker
 ```
-## Creation and activation of the environment
+## Setup the Environment
 
- 1. Docker installation
- 3. Lints checks with hadolint and pylint
- 4. Installation of Kubernetes and Minikube
+* Create a virtualenv and activate it
+* Run `make install` to install the necessary dependencies
 
-## Dockerfile
+### Running `app.py`
 
- 1. Dockerfile configuration 
- 2. Run a Container & Make a Prediction 
- 3. Logging in the docker_out.txt file
+1. Standalone:  `python app.py`
+2. Run in Docker:  `./run_docker.sh`
+3. Run in Kubernetes:  `./run_kubernetes.sh`
 
- ## Kubernetes
+### Kubernetes Steps
 
- 1. Configure Kubernetes to Run Locally 
- 2. Deploy with Kubernetes
- 3. Savings Output logs in the file kubernetes.out.txt
+* Setup and Configure Docker locally
+* Setup and Configure Kubernetes locally
+* Create Flask app in Container
+* Run via kubectl
 
- ## CircleCI Integration
+## CircleCI Integration
 
 This repository has been verified with CircleCI
 
